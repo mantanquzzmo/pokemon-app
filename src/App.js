@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PokemonList from './PokemonList'
 
 function App() {
+  const [pokemon, setPokemon] = useState(["bulbasaur", "charmander"])
   return (
-    <div>
-    Hej
-    </div>
+    <PokemonList pokemon={pokemon} />
   );
 }
 
